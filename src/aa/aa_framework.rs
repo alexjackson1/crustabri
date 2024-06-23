@@ -10,7 +10,7 @@ use anyhow::{anyhow, Context, Result};
 ///
 /// While the majority of the functions defined in this objects are related to the addition and deletion of arguments and attacks,
 /// some computation methods are defined here. See e.g. the [grounded_extension](Self::grounded_extension) function.
-#[derive(Default)]
+#[derive(Default, Debug)]
 pub struct AAFramework<T>
 where
     T: LabelType,

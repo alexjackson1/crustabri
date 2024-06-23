@@ -35,7 +35,7 @@ pub type Argument<T> = Label<T>;
 ///
 /// The type of the labels must be [`LabelType`] instances.
 /// The type associated with an argument is the one associated with its argument set.
-#[derive(Default)]
+#[derive(Default, Debug)]
 pub struct ArgumentSet<T>(LabelSet<T>)
 where
     T: LabelType;

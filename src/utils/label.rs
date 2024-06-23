@@ -61,7 +61,7 @@ where
 /// however, the id of the removed label will not be used for a newer label (even if is is equivalent to the removed one).
 ///
 /// The type of the labels must be [`LabelType`] instances.
-#[derive(Default)]
+#[derive(Default, Debug)]
 pub struct LabelSet<T>
 where
     T: LabelType,
